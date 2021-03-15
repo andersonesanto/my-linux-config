@@ -29,22 +29,21 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 set nocompatible
-filetype plugin on
 syntax on
 
 call plug#begin('~/.vim/plugged')
     Plug 'ajh17/spacegray.vim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-wiki/vimwiki'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colorscheme spacegray
-"let g:airline_theme='bubblegum'
-"let g:airline_theme='jellybeans'
-let g:airline_theme='term'
+" LightLine
+:set laststatus=2
+let g:lightline = { 'colorscheme': 'jellybeans' }
+
 :set nu rnu
 :set scrolloff=8
 :set termguicolors
