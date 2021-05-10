@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 if [ ! -L "~/.vimrc" ];  then
     cp ~/.vimrc ~/.vimrc.bak
     rm ~/.vimrc -f

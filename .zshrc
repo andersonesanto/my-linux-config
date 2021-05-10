@@ -20,6 +20,7 @@ export ZSH=/home/anderson/.oh-my-zsh
 ZSH_THEME="bira"
 #ZSH_THEME="santo"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="avit"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

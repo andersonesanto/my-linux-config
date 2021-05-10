@@ -47,11 +47,22 @@ let g:lightline = { 'colorscheme': 'jellybeans' }
 :set nu rnu
 :set scrolloff=8
 :set termguicolors
-:set tabstop=4
-:set softtabstop=4
-:set shiftwidth=4
+:set tabstop=2
+:set softtabstop=2
+:set shiftwidth=2
 :set expandtab
 :set smartindent
 :set incsearch
 :set signcolumn=yes
+:set showcmd
+:set hlsearch
+
+" mapeamento para evitar o ESC (menor deslocamento da mao)
 :inoremap jk <esc>
+
+" liga sinaliza texto da pesquisa somente enquanto estah pesquisando
+augroup vimrc-incsearch-highlight
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
