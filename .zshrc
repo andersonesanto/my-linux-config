@@ -17,7 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="strug"
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 #ZSH_THEME="santo"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_THEME="avit"
