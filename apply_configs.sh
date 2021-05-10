@@ -1,19 +1,19 @@
 #!/bin/bash
-if [ ! -L "~/.vimrc" ];  then
-    cp ~/.vimrc ~/.vimrc.bak
-    rm ~/.vimrc -f
-    ln -s ~/repo/santo_configs/.vimrc ~/.vimrc
+if [ ! -L "$HOME/.vimrc" ];  then
+    cp $HOME/.vimrc $HOME/.vimrc.bak
+    rm $HOME/.vimrc -f
+    ln -s $HOME/santo_configs/.vimrc $HOME/.vimrc
 fi
 
 
-if [ ! -L "~/.zprofile" ];  then
-    cp ~/.zprofile ~/.zprofile.bak
-    rm ~/.zprofile -f
-    ln -s ~/repo/santo_configs/.zprofile ~/.zprofile
+if [ ! -L "$HOME/.zprofile" ];  then
+    cp $HOME/.zprofile $HOME/.zprofile.bak
+    rm $HOME/.zprofile -f
+    ln -s $HOME/santo_configs/.zprofile $HOME/.zprofile
 fi
 
-if [ ! -L "~/.zshrc" ];  then
-    cp ~/.zshrc ~/.zshrc.bak
-    rm ~/.zshrc -f
-    ln -s ~/repo/santo_configs/.zshrc ~/.zshrc
+if [ ! -L "$HOME/.zshrc" ];  then
+    cp $HOME/.zshrc $HOME/.zshrc.bak
+    rm $HOME/.zshrc -f
+    ln -s $HOME/santo_configs/.zshrc $HOME/.zshrc
 fi
