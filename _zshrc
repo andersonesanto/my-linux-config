@@ -116,3 +116,4 @@ alias tmux="TERM=screen-256color tmux"
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
 EDITOR=vim
+VAGRANT_HOME=/home/anderson.santo/exwin/vagrant_home
