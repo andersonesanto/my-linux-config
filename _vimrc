@@ -24,9 +24,10 @@ syntax on
 
 call plug#begin('~/.vim/plugged')
     Plug 'ajh17/spacegray.vim'
-    Plug 'vim-wiki/vimwiki'
+    "Plug 'vim-wiki/vimwiki'
     Plug 'junegunn/fzf.vim'
     Plug 'itchyny/lightline.vim'
+    Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 colorscheme spacegray

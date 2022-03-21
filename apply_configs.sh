@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~/santo_configs
+git pull
 rm $HOME/.vimrc -f
 ln -s $HOME/santo_configs/_vimrc $HOME/.vimrc
 
