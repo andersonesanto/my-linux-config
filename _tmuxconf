@@ -6,4 +6,3 @@ set -g utf8 on
 set -g status-bg colour237
 set -g status-fg colour215
 
-
