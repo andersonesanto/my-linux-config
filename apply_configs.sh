@@ -1,6 +1,10 @@
 #!/bin/bash
 cd ~/santo_configs
 git pull
+
+## Copia o tema do oh-my-zsh para o local correto
+cp fox2.zsh-theme ~/.oh-my-zsh/themes/fox2.zsh-theme -f
+
 rm $HOME/.vimrc -f
 ln -s $HOME/santo_configs/_vimrc $HOME/.vimrc
 
