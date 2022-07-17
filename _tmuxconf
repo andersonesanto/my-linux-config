@@ -6,6 +6,12 @@ set -g utf8 on
 set -g status-bg colour237
 set -g status-fg colour215
 
+<<<<<<< HEAD
+
+run-shell ~/.tmux/plugins/tmux-nova/nova.tmux
+
+=======
 run-shell ~/.tmux/plugins/tmux-nova/nova.tmux
 
 
+>>>>>>> c3b19d52a059d29160f3ceb4d003738a0125e2c6
