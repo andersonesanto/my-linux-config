@@ -16,3 +16,6 @@ ln -s $HOME/santo_configs/_zshrc $HOME/.zshrc
 
 rm $HOME/.tmux.conf -f
 ln -s $HOME/santo_configs/_tmuxconf $HOME/.tmux.conf
+
+cd
+
