@@ -57,7 +57,7 @@ let g:lightline = { 'colorscheme': 'jellybeans' }
 "  autocmd CmdlineEnter /,\? :set hlsearch
 "  autocmd CmdlineLeave /,\? :set nohlsearch
 "augroup END
-set mouse=a
+"#set mouse=a
 
 set cursorline
 :highlight Cursorline cterm=bold ctermbg=black
