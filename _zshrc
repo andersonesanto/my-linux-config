@@ -112,7 +112,7 @@ alias cdhome='cd /mnt/c/Users/anderson.santo'
 alias sip='curl http://ifconfig.me/ip'
 alias tmux="TERM=screen-256color tmux"
 alias du1='du -h --max-depth=1'
-alias makework='mkdir -p ~/work/$(date +%F) && cd $_ && printf "\n\n\t%s\n\n" $(pwd) && ls -l'
+alias makework='mkdir -p ~/work/$(date +%F) && cd $_ && printf "\n\t%s\n\n" $(pwd) && ls -l'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
