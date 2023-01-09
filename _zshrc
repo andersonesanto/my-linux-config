@@ -125,8 +125,5 @@ VAGRANT_HOME=/home/anderson.santo/exwin/vagrant_home
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
-tmux list-sessions > /dev/null 2>&1
-_exitcode=$?
-if [ "$_exitcode" -eq 0 ] ; then
-  tmux list-sessions
-fi
+[[ $(tmux -q list-sessions 2>/dev/null) == '' ]] && echo "Tmux No sessions" || tmux list-sessions
+
