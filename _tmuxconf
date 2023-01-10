@@ -7,9 +7,9 @@ set -g status-bg colour237
 set -g status-fg colour215
 
 # changing prefix from 'Ctrl+b' to 'Alt+b'
-unbind C-b
-set-option -g prefix C-space
-bind-key C-space send-prefix
+#unbind C-b
+#set-option -g prefix C-space
+#bind-key C-space send-prefix
 
 run-shell ~/.tmux/plugins/tmux-nova/nova.tmux
 
