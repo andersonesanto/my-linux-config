@@ -60,4 +60,8 @@ let g:lightline = { 'colorscheme': 'jellybeans' }
 "#set mouse=a
 
 set cursorline
-:highlight Cursorline cterm=bold ctermbg=black
+":highlight Cursorline cterm=bold ctermbg=black
+:highlight Cursorline ctermbg=black
+":highlight Cursorline ctermfg=11 ctermbg=black
+
+
