@@ -26,14 +26,17 @@ call plug#begin('~/.vim/plugged')
     Plug 'ajh17/spacegray.vim'
     "Plug 'vim-wiki/vimwiki'
     Plug 'junegunn/fzf.vim'
-    Plug 'itchyny/lightline.vim'
+    "Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 colorscheme spacegray
 " LightLine
 :set laststatus=2
-let g:lightline = { 'colorscheme': 'jellybeans' }
+"let g:lightline = { 'colorscheme': 'jellybeans' }
+let g:airline_theme='bubblegum'
 
 :set nu rnu
 :set scrolloff=8
