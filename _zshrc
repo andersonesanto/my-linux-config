@@ -25,7 +25,7 @@ export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="fox2"
 #ZSH_THEME="agnoster"
 
-ZSH_THEME="intheloop"
+ZSH_THEME="gnzh" # set by `omz`
 
 #ZSH_THEME="gnzh"
 #ZSH_THEME="jispwoso"
