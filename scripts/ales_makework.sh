@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 if [ -f "$HOME/.config/ales/wsl1" ] ; then
     _workdir="/mnt/c/Users/anderson.santo/work"

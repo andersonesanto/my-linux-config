@@ -117,7 +117,8 @@ alias sip='curl http://ifconfig.me/ip'
 alias tmux="TERM=screen-256color tmux"
 alias du1='du -h --max-depth=1'
 #alias makework='mkdir -p ~/work/$(date +%F) && cd $_ && printf "\n\t%s\n\n" $(pwd) && ls -l'
-alias makework='mkdir -p ~/work/$(date +%F-%H%M) && cd $_ && printf "\n\t%s\n\n" $(pwd) && ls -l'
+#alias makework='mkdir -p ~/work/$(date +%F-%H%M) && cd $_ && printf "\n\t%s\n\n" $(pwd) && ls -l'
+alias makework='cd $($HOME/bin/ales_makework.sh)'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
