@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/santo_configs
+cd "$HOME/santo_configs" || { echo "diretorio nao encotrado"; exit; }
 git pull
 
 ## Copia o tema do oh-my-zsh para o local correto
@@ -16,6 +16,8 @@ ln -s $HOME/santo_configs/_zshrc $HOME/.zshrc
 
 rm $HOME/.tmux.conf -f
 ln -s $HOME/santo_configs/_tmuxconf $HOME/.tmux.conf
+
+cp ./scripts/ales*.sh $HOME/bin/
 
 cd
 
