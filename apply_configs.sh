@@ -1,21 +1,23 @@
 #!/bin/bash
-cd ~/my-linux-config
+cd "$HOME/santo_configs" || { echo "diretorio nao encotrado"; exit; }
 git pull
 
 ## Copia o tema do oh-my-zsh para o local correto
 cp fox2.zsh-theme ~/.oh-my-zsh/themes/fox2.zsh-theme -f
 
 rm $HOME/.vimrc -f
-ln -s $HOME/my-linux-config/_vimrc $HOME/.vimrc
+ln -s $HOME/santo_configs/_vimrc $HOME/.vimrc
 
 rm $HOME/.zprofile -f
-ln -s $HOME/my-linux-config/_zprofile $HOME/.zprofile
+ln -s $HOME/santo_configs/_zprofile $HOME/.zprofile
 
 rm $HOME/.zshrc -f
-ln -s $HOME/my-linux-config/_zshrc $HOME/.zshrc
+ln -s $HOME/santo_configs/_zshrc $HOME/.zshrc
 
 rm $HOME/.tmux.conf -f
-ln -s $HOME/my-linux-config/_tmuxconf $HOME/.tmux.conf
+ln -s $HOME/santo_configs/_tmuxconf $HOME/.tmux.conf
+
+cp ./scripts/ales*.sh $HOME/bin/
 
 cd
 

@@ -23,22 +23,20 @@ set nocompatible
 syntax on
 
 call plug#begin('~/.vim/plugged')
-    "Plug 'ajh17/spacegray.vim'
+    Plug 'ajh17/spacegray.vim'
     "Plug 'vim-wiki/vimwiki'
     Plug 'junegunn/fzf.vim'
     "Plug 'itchyny/lightline.vim'
     Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
-    Plug 'arcticicestudio/nord-vim'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
-"colorscheme spacegray
-colorscheme nord
+colorscheme spacegray
 " LightLine
 :set laststatus=2
 "let g:lightline = { 'colorscheme': 'jellybeans' }
-"let g:airline_theme='bubblegum'
+let g:airline_theme='bubblegum'
 
 :set nu rnu
 :set scrolloff=8
@@ -64,9 +62,9 @@ colorscheme nord
 "augroup END
 "#set mouse=a
 
-"set cursorline
+set cursorline
 ":highlight Cursorline cterm=bold ctermbg=black
-":highlight Cursorline ctermbg=black
+:highlight Cursorline ctermbg=black
 ":highlight Cursorline ctermfg=11 ctermbg=black
 
 
