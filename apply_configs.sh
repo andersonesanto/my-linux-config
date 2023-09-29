@@ -19,4 +19,4 @@ ln -s "$(pwd)"/_tmuxconf $HOME/.tmux.conf
 cp ./scripts/ales*.sh $HOME/bin/
 
 cd
-
+omz reload
