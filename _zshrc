@@ -72,8 +72,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( compleat git kubectl docker aws kubectx helm tmux mosh)
-
+plugins=( compleat git kubectl docker aws kubectx helm tmux mosh kube-ps1)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -112,6 +111,7 @@ alias du1='du -h --max-depth=1'
 #alias makework='mkdir -p ~/work/$(date +%F-%H%M) && cd $_ && printf "\n\t%s\n\n" $(pwd) && ls -l'
 alias makework='cd $($HOME/bin/ales_makework.sh)'
 alias kubeconfig='export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f | xargs grep cluster -l | fzf -m)'
+alias sshl='ssh $(cat ~/.ssh/config | grep -i -e "^host" | cut -d" " -f2 | grep -v "*" | fzf -m )'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -124,5 +124,13 @@ VAGRANT_HOME=/home/anderson.santo/exwin/vagrant_home
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
+PROMPT='$(kube_ps1)'$PROMPT
+
 [[ $(tmux -q list-sessions 2>/dev/null) == '' ]] && echo "Tmux No sessions" || tmux list-sessions
+
+
+
+
+#  export HUMANLOG_INSTALL="/home/anderson.santo/.humanlog"
+#  export PATH="$HUMANLOG_INSTALL/bin:$PATH"
 
