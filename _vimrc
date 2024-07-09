@@ -23,7 +23,6 @@ set nocompatible
 syntax on
 
 call plug#begin('~/.vim/plugged')
-    Plug 'ajh17/spacegray.vim'
     "Plug 'vim-wiki/vimwiki'
     Plug 'junegunn/fzf.vim'
     "Plug 'itchyny/lightline.vim'
